@@ -31,10 +31,10 @@ import {
 // data
 const aboutData = [
   {
-    title: 'skills',
+    title: "skills",
     info: [
       {
-        title: 'Web Development',
+        title: "Web Development",
         icons: [
           <FaHtml5 key="html5" />,
           <FaCss3 key="css3" />,
@@ -47,91 +47,100 @@ const aboutData = [
         ],
       },
       {
-        title: 'Programming Languages',
-        icons: [<FaJava key="java" />, <FaPython key="python" />, <SiC key="c" />, <SiCplusplus key="cplusplus" />],
+        title: "Programming Languages",
+        icons: [
+          <FaJava key="java" />,
+          <FaPython key="python" />,
+          <SiC key="c" />,
+          <SiCplusplus key="cplusplus" />,
+        ],
       },
       {
-        title: 'Mobile App Development',
+        title: "Mobile App Development",
         icons: [<SiKotlin key="kotlin" />, <SiAndroidstudio key="androidstudio" />],
       },
       {
-        title: 'SQL & Database Management',
-        icons: [<SiMysql key="mysql" />, <SiMongodb key="mongodb" />, <SiSqlite key="sqlite" />],
+        title: "SQL & Database Management",
+        icons: [
+          <SiMysql key="mysql" />,
+          <SiMongodb key="mongodb" />,
+          <SiSqlite key="sqlite" />,
+        ],
       },
       {
-        title: 'UI/UX Design',
+        title: "UI/UX Design",
         icons: [<FaFigma key="figma" />, <SiAdobephotoshop key="photoshop" />],
       },
       {
-        title: 'Others',
+        title: "Others",
         icons: [<SiGithub key="github" />, <SiRstudio key="rstudio" />],
       },
     ],
   },
   {
-    title: 'Education',
+    title: "Education",
     info: [
       {
-        title: 'BSc (Hons) in Information Technology Specialising in Software Engineering',
-        stage: '2021 - Present',
+        title: "BSc (Hons) in Information Technology Specialising in Software Engineering",
+        stage: "2021 - Present",
       },
       {
-        title: 'Diploma in English Language & Literature',
-        stage: '2021 – 2022',
+        title: "Diploma in English Language & Literature",
+        stage: "2021 – 2022",
       },
       {
-        title: 'Rahula College Matara',
-        stage: '2007 – 2021',
+        title: "Rahula College Matara",
+        stage: "2007 – 2021",
       },
     ],
   },
   {
-    title: 'Academic Credentials',
+    title: "Academic Credentials",
     info: [
       {
-        title: 'Cumulative Grade Point Average',
-        stage: '3.26',
+        title: "Cumulative Grade Point Average",
+        stage: "3.26",
       },
       {
-        title: 'G.C.E A/Level',
-        stage: 'Physics – C, Chemistry – C, Combined Maths – S',
+        title: "G.C.E A/Level",
+        stage: "Physics – C, Chemistry – C, Combined Maths – S",
       },
       {
-        title: 'G.C.E O/Level',
-        stage: '7A’s and 2B’s',
+        title: "G.C.E O/Level",
+        stage: "7A’s and 2B’s",
       },
     ],
   },
   {
-    title: 'Strengths',
+    title: "Strengths",
     info: [
       {
-        title: 'Design Process',
-        stage: '95%',
+        title: "Design Process",
+        stage: "95%",
       },
       {
-        title: 'Communication',
-        stage: '100%',
+        title: "Communication",
+        stage: "100%",
       },
       {
-        title: 'Creativity',
-        stage: '97%',
+        title: "Creativity",
+        stage: "97%",
       },
       {
-        title: 'Problem Handling',
-        stage: '93%',
+        title: "Problem Handling",
+        stage: "93%",
       },
     ],
   },
 ];
 
 // components
-import Avatar from '../../components/Avatar';
-import Circles from '../../components/Circles';
+import Avatar from "../../components/Avatar";
+import Circles from "../../components/Circles";
 
 // framer motion
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../variants'
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 // counter
 import CountUp from "react-countup";
@@ -146,10 +155,10 @@ const About = () => {
 
       {/* avatar img */}
       <motion.div
-        variants={fadeIn('right', 0.2)}
+        variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
-        exit={'hidden'}
+        exit={"hidden"}
         className="hidden xl:flex absolute -bottom-1/4 -left-[235px]"
       >
         <Avatar />
@@ -159,30 +168,30 @@ const About = () => {
         {/* text */}
         <div className="flex-1 flex flex-col justify-center mt-5">
           <motion.h2
-            variants={fadeIn('right', 0.2)}
+            variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
-            exit={'hidden'}
+            exit={"hidden"}
             className="h2"
           >
             Crafting <span className="text-accent">stories</span> through code and innovation.
           </motion.h2>
           <motion.p
-            variants={fadeIn('right', 0.4)}
+            variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
-            exit={'hidden'}
+            exit={"hidden"}
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-10 px-2 xl:px-0"
           >
-            I'm Thevindu Thulnith Rathnaweera, a 3rd-year student at SLIIT. Passionate about coding and software development, I excel in leadership and quality assurance. At 21+, I'm eager to innovate and collaborate. Let's build something great together!
+            I&apos;m Thevindu Thulnith Rathnaweera, a 3rd-year student at SLIIT. Passionate about coding and software development, I excel in leadership and quality assurance. At 21+, I&apos;m eager to innovate and collaborate. Let&apos;s build something great together!
           </motion.p>
 
           {/* counters */}
           <motion.div
-            variants={fadeIn('right', 0.6)}
+            variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
-            exit={'hidden'}
+            exit={"hidden"}
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
             <div className="flex flex-1 xl:gap-x-6 ">
@@ -220,10 +229,10 @@ const About = () => {
 
         {/* info */}
         <motion.div
-          variants={fadeIn('left', 0.4)}
+          variants={fadeIn("left", 0.4)}
           initial="hidden"
           animate="show"
-          exit={'hidden'}
+          exit={"hidden"}
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
@@ -231,12 +240,14 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className={`${index === itemIndex && 'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'} cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  className={`${
+                    index === itemIndex ? "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300" : ""
+                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
                 </div>
-              )
+              );
             })}
           </div>
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
