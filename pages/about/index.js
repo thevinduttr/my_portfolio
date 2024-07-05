@@ -174,7 +174,7 @@ const About = () => {
             exit={'hidden'}
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-10 px-2 xl:px-0"
           >
-            I'm Thevindu Thulnith Rathnaweera, a 3rd-year student at SLIIT. Passionate about coding and software development, I excel in leadership and quality assurance. At 21+, I'm eager to innovate and collaborate. Let's build something great together!
+            I&apos;m Thevindu Thulnith Rathnaweera, a 3rd-year student at SLIIT. Passionate about coding and software development, I excel in leadership and quality assurance. At 21+, I&apos;m eager to innovate and collaborate. Let&apos;s build something great together!
           </motion.p>
 
           {/* counters  */}
