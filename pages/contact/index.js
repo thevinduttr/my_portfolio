@@ -1,5 +1,5 @@
 //components
-import Circles from '../../components/Circles'
+import Circles from '/components/Circles'
 
 //icon
 import { BsArrowRight } from 'react-icons/bs'
