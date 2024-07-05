@@ -150,7 +150,7 @@ const About = () => {
   console.log(index);
 
   return (
-    <div className="h-full bg-primary py-32 text-center xl:text-left">
+    <div className="xl:h-full xl:pt-2 pt-40 bg-primary py-0 text-center xl:text-left ">
       <Circles />
 
       {/* avatar img */}
@@ -250,7 +250,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 pb-24 xl:pb-0 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div key={itemIndex} className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
